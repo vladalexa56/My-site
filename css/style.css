@@ -27,14 +27,29 @@ h4 {
 p {
   font-size: 1.2rem;
 }
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.section {
+  border-top: 1px solid #ddd;
+
+  transition: transform 1s, opacity 1s;
+}
 /*NavBar*/
 .navbar {
-  position: fixed;
+  position: sticky;
   z-index: 100;
   width: 100%;
   padding: 0 5%;
 
   font-weight: 700;
+}
+.sticky {
+  position: fixed;
+  z-index: 100;
 }
 .navbar-nav {
   font-size: 1.3rem;
@@ -182,6 +197,7 @@ p {
   z-index: 100;
 }
 .card-text a {
+  font-size: 60%;
   width: 200px;
   margin: 10% auto;
   display: block;
